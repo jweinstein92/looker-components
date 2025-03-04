@@ -49,7 +49,6 @@
     "lint:circular": "madge packages/*/src --circular --extensions ts,tsx",
     "lint:yarn": "./bin/lint-yarn.sh",
     "lint-staged": "yarn exec lint-staged",
-    "test": "yarn jest",
     "test:a11y": "yarn workspace storybook a11y",
     "test:image-snapshots": "yarn workspace storybook snapshots",
     "test:image-snapshots-update": "yarn workspace storybook snapshots -u",
@@ -149,8 +148,5 @@
       "eslint"
     ]
   },
-  "pre-commit": [
-    "lint-staged"
-  ],
   "version": "1.18.0"
 }
